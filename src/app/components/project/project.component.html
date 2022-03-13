@@ -1,10 +1,12 @@
 <div id="project" class="project">
 
     <h2><span class="title">
-            Projects
+            Projects 
         </span></h2>
     <div class="project-container">
-        
+        <div *ngFor="let project of projects">
+            {{project.name}}
+        </div>
     </div>
 
 </div>
