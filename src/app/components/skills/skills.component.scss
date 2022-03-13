@@ -1,0 +1,106 @@
+.skills {
+  margin: 5%;
+  h2 {
+    width: 90%;
+    text-align: center;
+    border-bottom: 1px solid var(--textColor);
+    line-height: 0.1em;
+    margin: 10px 0 20px;
+    margin-left: 5%;
+    margin-top: 5%;
+  }
+
+  .title {
+    background: #fff;
+    padding: 0 10px;
+  }
+
+  p{
+    display: block;
+    margin: 3%;
+    margin-left: 12%;
+    width: 50%;
+    text-align: justify;
+    word-spacing: .1em;
+    color: var(--textColorSecondary);
+    word-wrap: break-word;
+  }
+
+  &-container {
+    display: grid;
+    grid-template-columns: repeat(2,  minmax(0, 1fr));
+    
+    grid-gap: 1rem;
+
+    .left-part {
+      display: flex;
+      flex-direction: column;
+      margin-top: 10px;
+      
+      .item {
+        cursor: pointer;
+        padding: 2%;
+        width: 50%;
+        margin-left: 25%;
+        border-left: 2px solid rgba($color: #000000, $alpha: .2);
+        box-sizing: border-box;
+        transition-timing-function: ease-in-out;
+        transition-duration: 0.2s;
+        color: var(--textColorSecondary);
+        font-weight: 500;
+
+        &-active {
+          color: var(--blue);
+          border-color: var(--blue);
+        }
+
+       
+      }
+
+
+    }
+
+    .right-part{
+      margin-right: 10%;
+    
+      .right-part-container{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, minmax(75px, auto));
+        grid-gap: 1rem;
+        margin-top: 15px;
+
+        .card {
+          cursor: pointer;
+          color: var(--textColorSecondary);
+          border-radius: 4px;
+          background-color: white;
+          text-align: center;
+          display: grid;
+          grid-template-columns: 1fr;
+          grid-template-rows: repeat(2, minmax(40px, auto));
+          justify-content: center;
+          align-items: center;
+          box-shadow: 3px 3px 5px var(--textColorSecondary);
+
+          padding: 10px;
+          transition: 0.2s;
+          &:hover{
+            transform: scale(1.1);
+          }
+
+          img{
+            width: 40%;
+            margin: auto;
+          }
+          
+          span{
+            
+          }
+          
+        }
+
+      }
+    }
+  }
+}

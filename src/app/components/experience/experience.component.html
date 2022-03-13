@@ -1,0 +1,25 @@
+<div id="experience" class="experience">
+
+    <h2><span class="title">
+            Experience
+        </span></h2>
+    <div class="experience-container">
+        <div class="item" *ngFor="let experience of experiences; let index = index">
+            <div (click)="toggleVisibility(index)">
+                <div class="title">
+                    <span>{{experience.title}}</span>&nbsp;
+                    <span class="period">{{experience.startAt}} - &nbsp;{{experience.endAt}}</span>&nbsp;
+
+                    <i id="toggle-{{index}}" class="fa fa-arrow-right toggle" aria-hidden="true"></i>
+                </div>
+            </div>
+            <ul id="{{index}}" class="tasks">
+                <li class="task" *ngFor="let task of experience.tasks">
+                    <i class="fa fa-check-circle" aria-hidden="true"></i>
+                    {{task}}
+                </li>
+            </ul>
+        </div>
+    </div>
+
+</div>

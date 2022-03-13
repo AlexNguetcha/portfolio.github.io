@@ -1,0 +1,32 @@
+.project {
+    margin: 5%;
+  
+    h2 {
+      width: 90%;
+      text-align: center;
+      border-bottom: 1px solid var(--textColor);
+      line-height: 0.1em;
+      margin: 10px 0 20px;
+      margin-left: 5%;
+      margin-top: 5%;
+    }
+  
+    .title {
+      background: #fff;
+      padding: 0 10px;
+    }
+  
+    p {
+      display: block;
+      margin: 3%;
+      margin-left: 12%;
+      width: 50%;
+      text-align: justify;
+      word-spacing: .1em;
+      color: var(--textColorSecondary);
+      word-wrap: break-word;
+    }
+  
+  
+  }
+  

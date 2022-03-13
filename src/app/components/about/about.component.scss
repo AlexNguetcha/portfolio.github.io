@@ -1,0 +1,50 @@
+.about {
+
+  h2 {
+    width: 90%;
+    text-align: center;
+    border-bottom: 1px solid var(--textColor);
+    line-height: 0.1em;
+    margin: 10px 0 20px;
+    margin-left: 5%;
+    margin-top: 5%;
+  }
+
+  .title {
+    background: #fff;
+    padding: 0 10px;
+  }
+
+  &-container {
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    margin-left: 10%;
+    margin-right: 10%;
+    align-items: center;
+    gap: 12%;
+    padding: 2%;
+
+    .left-part {
+      img {
+        max-width: 250%;
+        border-radius: 10%;
+        
+
+      }
+
+    }
+
+    .right-part {
+      p {
+        width: 70%;
+        margin: auto;
+        margin-right: 5px;
+        text-align: justify;
+        word-spacing: .1em;
+        color: var(--textColorSecondary);
+        word-wrap: break-word;
+      }
+    }
+  }
+}

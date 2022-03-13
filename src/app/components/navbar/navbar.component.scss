@@ -1,0 +1,147 @@
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: var(--blue);
+
+  .navbar-container {
+    display: flex;
+    padding: 25px;
+
+    .logo-container {
+      img{
+        margin-top: 10px;
+      }
+      i {
+        display: none;
+      }
+    }
+
+    .navbar-navigation {
+      display: flex;
+      gap: 25px;
+      margin: auto;
+      margin-left: 10%;
+
+      a {
+        font-weight: bold;
+        display: block;
+        color: white;
+        cursor: pointer;
+        border-radius: 4px;
+        padding: 15px;
+        transition: background-color 0.3s ease-in-out;
+        box-sizing: border-box;
+
+
+        &:hover {
+          background-color: white;
+          color: var(--textColor);
+        }
+
+        &.active{
+          background-color: white;
+          color: var(--textColor);
+
+          &:hover{
+            background-color: var(--blue);
+            color: white;
+          }
+        }
+
+
+      }
+
+    }
+
+    .navbar-social-networks {
+      display: flex;
+      margin: auto;
+      margin-right: 10%;
+      gap: 20px;
+
+      a {
+        color: white;
+      }
+    }
+  }
+
+
+}
+
+@media only screen and (max-width:600px) {
+  html,body{
+    overflow-x: hidden;
+  }
+  .navbar {
+    overflow-x: hidden;
+    .navbar-container {
+      display: flex;
+      flex-direction: column;
+      padding: 10px;
+
+
+      .logo-container {
+        display: flex;
+        img{
+          border-radius: 100%;
+          width: 10%;
+        }
+        i {
+          color: white;
+          margin: auto;
+          margin-right: 5px;
+          display: inline;
+          cursor: pointer;
+        }
+
+
+      }
+
+      #navbar-toggle{
+        z-index: 10000;
+      }
+      .navbar-navigation {
+        background-color: var(--blue);
+        position: fixed;
+        flex-direction: column;
+        width: 100vw;
+        gap: 5px;
+        margin-left: 1px;
+        margin: 0;
+        top: 0;
+        left: 100%;
+        transition: left .3s ease-in-out;
+
+        a {
+          display: inline;
+          color: white;
+          cursor: pointer;
+          border-radius: 4px;
+          transition: background-color 0.3s ease-in-out;
+          box-sizing: border-box;
+
+
+          &:hover {
+            background-color: white;
+            color: var(--textColor);
+          }
+
+
+        }
+
+      }
+
+      .navbar-social-networks {
+        display: none;
+        border: 1px solid var(--borderColor);
+
+        a {
+          color: white;
+        }
+      }
+    }
+
+
+  }
+}
