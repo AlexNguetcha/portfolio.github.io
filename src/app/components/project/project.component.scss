@@ -90,3 +90,13 @@
   
   }
   
+
+@media only screen and (max-width:600px) {
+      .projects{
+        .project-container {
+            .project{
+                width: 95%;
+            }
+        }
+      }
+  }

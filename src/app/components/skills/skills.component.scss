@@ -104,3 +104,47 @@
     }
   }
 }
+
+
+@media only screen and (max-width:600px) {
+  .skills{
+    margin: 0;
+    &-container {
+      display: grid;
+      grid-template-columns: repeat(2,  minmax(0, 1fr));
+      
+      grid-gap: 1rem;
+  
+      .left-part {
+        display: flex;
+        flex-direction: column;
+        margin-top: 10px;
+        
+        .item {
+          cursor: pointer;
+          padding: 5px;
+          width: 60%;  
+          font-size: 16px;
+         
+        }
+  
+  
+      }
+  
+      .right-part{
+        margin-right: 5%;
+      
+        .right-part-container{
+          display: grid;
+          grid-template-columns: repeat(2, 1fr);
+          grid-template-rows: repeat(3, minmax(50px, auto));
+          grid-gap: .7rem;
+          margin-top: 10px;
+
+        }
+      }
+    }
+  }
+
+
+}

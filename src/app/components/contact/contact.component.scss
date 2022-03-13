@@ -36,4 +36,15 @@
   
   
   }
+
+  @media only screen and (max-width:600px) {
+    .contact{
+      margin: none;
+      p{
+        margin: 0;
+        margin-bottom: 10px;
+        width: 100%;
+      }
+    }
+  }
   
