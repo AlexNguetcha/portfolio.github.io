@@ -1,11 +1,32 @@
-<div id="project" class="project">
+<div id="project" class="projects">
 
     <h2><span class="title">
             Projects 
         </span></h2>
     <div class="project-container">
-        <div *ngFor="let project of projects">
-            {{project.name}}
+        <div class="project" *ngFor="let project of projects">
+            <div class="card text-left">
+              <img class="card-img-top" src="{{project.picture}}" alt="">
+              <div class="card-body">
+                <div class="card-header">
+                    <h4 class="card-title">{{project.name}}</h4>
+                    <div class="card-links">
+                        <a href="{{project.github}}">
+                            <i *ngIf="project.github" class="fa fa-home" aria-hidden="true"></i>
+                        </a>
+                        <a href="{{project.link}}">
+                            <i *ngIf="project.link" class="fa fa-link" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                </div>
+                <p class="card-text">{{project.description}}</p>
+                <div class="card-technos">
+                    <div *ngFor="let techno of project.technos">
+                        {{techno}}
+                    </div>
+                </div>
+              </div>
+            </div>
         </div>
     </div>
 

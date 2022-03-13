@@ -1,5 +1,5 @@
-.project {
-    margin: 5%;
+.projects {
+
   
     h2 {
       width: 90%;
@@ -19,8 +19,6 @@
     p {
       display: block;
       margin: 3%;
-      margin-left: 12%;
-      width: 50%;
       text-align: justify;
       word-spacing: .1em;
       color: var(--textColorSecondary);
@@ -28,7 +26,65 @@
     }
 
     .project-container{
-        border: 1px solid green;
+        margin: auto;
+        margin-top: 50px;
+        margin-left: 5%;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 25px;
+
+        .project{
+
+            width: 30%;
+            border-radius: 4px;
+            box-shadow: 3px 3px 3px 3px rgba($color: #000000, $alpha: .35);
+
+            .card-img-top{
+                border-radius: 4px;
+                max-width: 100%;
+            }
+            .card-header{
+                display: flex;
+                flex-direction: row;
+                
+                .card-title{
+                    margin-left: 10px;
+                }
+                .card-links{
+                    margin: auto;
+                    margin-right: 10px;
+
+                    display: flex;
+                    gap: 10px;
+                    a{
+                        border: 1px solid var(--blue);
+                        border-radius: 4px;
+                        padding: 3%;
+
+                        i{
+                            color: var(--blue);
+                        }
+                    }
+                }
+
+            }
+
+            .card-technos{
+                display: flex;
+                gap: 10px;
+                padding: 2%;
+                div{
+                    border: 1px solid var(--blue);
+                    border-radius: 4px;
+                    padding: 1%;
+                    color: var(--blue);
+                }
+                
+            }
+
+            
+
+        }
     }
   
   
