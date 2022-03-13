@@ -1,7 +1,17 @@
-footer{
-    background-color: rgba($color: #000000, $alpha: 0.35)
+.footer{
+    width: 100%;
+    height: 20vh;
+    background-color: #e2e8f0;
+    color: var(--textColorSecondary);
+    text-align: center;
+    justify-content: center;
+    display: flex;
 
-    span{
-        text-align: center;
+    div{
+
+        margin-top: 55px;
     }
+    
+
+
 }
